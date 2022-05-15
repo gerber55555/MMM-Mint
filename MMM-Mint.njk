@@ -1,0 +1,30 @@
+{#
+ # Magic Mirror
+ # Module: MMM-Mint
+ #
+ # By Christian Gerber
+ # MIT Licensed.
+ #}
+
+{# Wrapper #}
+{# <div class="{{ config.textSize }}" style="max-width: {{ config.maxWidth }};"> #}
+<div class="{{ config.textSize }};">
+    
+    {% if not mintData %}
+
+        {# No data #}
+        {{ 'TEXT_NODATA' | translate }}
+
+    {% else %}
+
+        {{ mintData.netWorth }}
+        <br>
+        {{ mintData.mortgageBalance | safe }}
+        <br>
+        {{ mintData.loanPayoffExtra | safe}}
+        <br>
+        {{ mintData.loanPayoffNoExtra | safe}}
+
+    {% endif %}
+
+</div>

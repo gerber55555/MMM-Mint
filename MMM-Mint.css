@@ -1,0 +1,43 @@
+
+
+
+/* Magic Mirror
+ * Module: MMM-Mint
+ *
+ * By Christian Gerber
+ * MIT Licensed.
+ */
+
+/* Hide all extra children except the list */
+.MMM-Mint .mw-parser-output > :not(ul) {
+    display: none;
+}
+
+/* No list dots */
+.MMM-Mint ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+}
+
+/* Space between list items */
+.MMM-Mint li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.MMM-Mint .xsmall,
+.MMM-Mint .default {
+    max-width: 50vh;
+}
+
+.MMM-Mint .small {
+    max-width: 60vh;
+}
+
+.MMMM-Mint .medium {
+    max-width: 75vh;
+}
+
+.MMM-Mint .large {
+    max-width: 100vh;
+}
